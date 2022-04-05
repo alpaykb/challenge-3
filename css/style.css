@@ -1,0 +1,61 @@
+body{
+    background-image: url(../images/wallpaper.jpg);
+     display: flex;
+  flex-flow: row wrap;
+}
+.title {
+    font-family: 'IM Fell English SC', serif;
+    color: #353b48;
+    background: #fff;
+    
+}
+.banner{
+     display: none;
+}
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+.mapboxgl-popup-content h4 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 20px;
+}
+
+.mapboxgl-popup-content {
+    color: #fff;
+    background: #353b48 !important;
+}
+
+.mapboxgl-popup-tip {
+    border-top-color: #353b48 !important;
+}
+
+.mapboxgl-popup-close-button {
+    color: #fff;
+}
+
+.marker {
+    background-image: url('../images/marker.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media (min-width:800px){
+   .banner{
+       display: block;
+      width:100%;
+}
+#map {
+    width: 100vw;
+    height: 50vh;
+}
+.mapboxgl-popup-close-button {
+    color: #fff;
+}
+}
+
+
